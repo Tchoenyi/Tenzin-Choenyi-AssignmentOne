@@ -13,21 +13,24 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: right;
 }
 .wrapper {
-    max-width: 1400px;
-    width: 90%;
+    max-width: 70rem;
+    width: 85%;
     margin: 0 auto;
 }
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 /* Style Guide */
 h1 {
     color: white;
     font-size: 3.44rem;
     font-weight: normal;
-    line-height: 63.7px;
-    letter-spacing: 0.8px;
-    margin: 30px 0 0;
+    line-height: 3.185rem;
+    letter-spacing: 0.04rem;
+    margin: 1rem 0 0;
 }
 
 button {
@@ -36,7 +39,7 @@ button {
     font-size: 1rem;
     line-height: 1.45rem;
     text-align: center;
-    padding: 10px 15px;
+    padding: 0.5rem 0.75rem;
     text-transform: uppercase;
 }
 
@@ -48,14 +51,40 @@ h2 {
     text-align: center;
 }
 
+ul a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    line-height: 1.45rem;
+}
+
+p {
+    font-weight: normal;
+    color: white;
+    line-height: 1.5rem;
+    letter-spacing: 0.01rem;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
 /* Header Section*/
 header {
     background: url(./assets/header-image.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 5px;
+    padding-top: 0.25rem;
     background-position: center;
+}
+
+.navContainer i {
+    color: white;
+    visibility: hidden;
 }
 
 .navContainer{
@@ -64,48 +93,45 @@ header {
 
 }
 
-.navLinks{
+.navLinks {
     display: flex;
     justify-content: space-between;
     align-self: center;
     max-width: 100%;
-    width: 20%;
-}
-
-.navLinks a { 
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    line-height: 29px;
+    width: 30%;
 }
 
 .navContainer p {
+    font-family: 'Offside',cursive;
     max-width: 100%;
     color: white;
+    line-height: 1rem;
+
 }
 
-
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: end;
+    position: relative;
+    bottom: 9rem;
+    right: 1.5rem;
+    line-height: 1rem;
+}
 
 /* About Section(top)*/
-.aboutTop h2 {
-    margin: 100px 0;
+.aboutContainer h2 {
+    margin: 5rem 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-    display: block;
-}
-
-.imgGallery {
+.aboutTop .imgGallery {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.imgGallery li {
-    flex-basis: calc(100% / 3 - 30px);
+.aboutTop .imgGallery li {
+    flex-basis: calc(100% / 3 - 1.5rem);
 }
 
 /* About Section Bottom */
@@ -113,68 +139,278 @@ img {
 .aboutBottom {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 5rem 0;
 }
 
 .aboutBottom .textContainer {
-    width: 75%;
+    width: 70%;
     
 }
 
 .aboutBottom .imgContainer {
-    width: 25%;
-    margin-right: 50px;
+    width: 30%;
+    margin-right: 2.5rem;
 }
 
-.textContainer h2 {
+.aboutBottom .textContainer h2 {
     margin: 0;
     text-align: left;
 }
 
-.textContainer p {
-    font-weight: normal;
-    color: #2c2d2c;
-    line-height: 1.5rem;
-    letter-spacing: 0.01rem;
+.aboutBottom .textContainer p {
+    color: #2c2d2c;    
 }
 
-.textContainer button {
+.aboutBottom .textContainer button {
     margin-top: 1rem;
     color: white;
     background-color: #116500;
 }
 
-/* About section pt2 (top) */
-.aboutContainer {
+/* Blog section */
+.blogContainer {
     background: #213C28;
 }
 
-.bobbyAndBella  {
+.bobbyAndBella,
+.marco  {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bobbyAndBella .textContainer {
-    width: 100%;
+.bobbyAndBella .textContainer,
+.marco .textContainer {
+    max-width: 100%;
+    width: 70%;
+    margin-left: 5.5rem;
 }
 
-.bobbyAndBella .imgContainer {
-    width: 100%;
+.bobbyAndBella .imgContainer,
+.marco .imgContainer {
+    max-width: 100%;
+    width: 85%;
 }
 
-.bobbyAndBella .textContainer p{
+.bobbyAndBella .textContainer h2,
+.marco .textContainer h2 {
     color: white;
+    text-align: left;
 }
 
-.bobbyAndBella .textContainer h2 {
+.bobbyAndBella .textContainer button, 
+.marco .textContainer button {
+    background: white;
+    color: #213C28;
+}
 
+/* Contact Icons */
+
+.contactIcons {
+    padding: 5rem 0;
+}
+
+.iconGallery {
+    display: flex;
+    justify-content: space-around;
+    color: #2c2d2c;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.iconGallery p {
+    font-family: 'offside', cursive;
+    margin-top: 0;
+    color: #116500;
+    font-size: 1rem;
+}
+
+/* Contact Content */
+
+.contactContent {
+    padding: 5rem 0;
+    background: #213C28;
+}
+
+.contactContent .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.contactContent p {
+    margin: 0 auto;
+}
+
+.stayUpdated p:first-child {
+    font-weight: bold;
+    line-height: 1.45rem;
+    letter-spacing: 0;
+    font-family: 'offside', cursive;
+    margin-bottom: 0.5rem;
+}
+
+.contactInfo p:first-child {
+    font-weight: bold;
+    line-height: 1.45rem;
+    letter-spacing: 0;
+    font-family: 'offside', cursive;
+    margin-bottom: 0.0rem;
+}
+
+.contactNav {
+    display: flex;
+    flex-direction: column;
+    font-family: 'offside', cursive;
+}
+
+input[type=text] {
+    font-family: 'borlow', sans-serif;
+    width: 60%;
+    color: #213C28;
+    padding: 0.5rem 0;
+    border: none;
+}
+
+input[type=submit] {
+    font-family: 'offside', cursive;
+    background: #2c2d2c;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    padding: 0.45rem 1rem 0.65rem;
 }
 
 
+/* footer */
+footer {
+    background: #2c2d2c;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+@media(max-width: 600px){
+    /* general css */
+    .wrapper {
+        width: 90%;
+    }
+
+    /* header section */
+    .navLinks,
+    .logoContainer,
+    .aboutBottom .imgContainer {
+        display: none;
+    }
+
+    .navContainer i {
+        visibility: visible;
+        font-size: 2.5rem;
+        align-self: center;
+    }
+
+    h1 {
+        width: 40%;
+        font-size: 2.1rem;
+        line-height: 2rem;
+    }
+
+    .aboutTop .imgGallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+
+    /* About section */
+    .aboutTop .imgGallery {
+        flex-wrap: wrap;
+    }
+
+    .aboutTop .imgGallery img {
+        flex-basis: auto;
+    }
+
+
+    .aboutBottom .textContainer {
+        width: 100%;
+    }
+
+    .aboutBottom .textContainer button {
+        position: relative;
+        left: 30%;
+        width: 40%;
+        padding: 1.5rem;
+    }
+
+    /* Blog section */
+    .bobbyAndBella {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .marco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bobbyAndBella .imgContainer,
+    .marco .imgContainer {
+        width: 100%;
+    }
+
+    .bobbyAndBella .textContainer,
+    .marco .textContainer {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .bobbyAndBella .textContainer h2,
+    .marco .textContainer h2 {
+        text-align: center;
+    }
+
+    .bobbyAndBella .textContainer button,
+    .marco .textContainer button {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        left: 30%;
+        width: 40%;
+        padding: 1.5rem;
+    }
+
+    .iconGallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactContent .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .stayUpdated {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    input[type=submit] {
+        align-items: center;
+        width: 30%;
+        padding: 0.75rem 0;
+        margin-bottom: 1rem;
+    }
 
 
 
-/* @media(max-width: 1220px){
 
-} */
+}

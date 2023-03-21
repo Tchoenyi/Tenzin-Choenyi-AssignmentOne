@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Panda Sanctuary</title>
 </head>
 <body>
@@ -18,22 +19,30 @@
         <div class="wrapper">
             <nav class="navContainer">
                 <p>Panda<br>Sanctuary</br></p>
+                <i class="ph ph-list"></i>
                 <ul class="navLinks">
-                    <li><a href="#about">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <h1>A safe and loving<br> place for all</br> pandas</h1>
         </div>
+        <div class="logoContainer">
+            <i class="ph ph-instagram-logo"></i>
+            <i class="ph ph-facebook-logo"></i>
+            <i class="ph ph-snapchat-logo"></i>
+            <i class="ph ph-twitter-logo"></i>
+        </div>
+        
     </header>
 
     <main>
-        <section id="about" class="galleryContainer">
+        <section id="about" class="aboutContainer">
             <div class="wrapper"> 
+                <h2>Our New Friends</h2>
                 <section class="aboutTop">
-                    <h2>Our New Friends</h2>
                     <ul class="imgGallery">
                         <li><img src="./assets/gallery-image-1@2x.png" alt="Panda snacking on some greens"></li>
                         <li><img src="./assets/gallery-image-2@2x.png" alt="panda looking ahead"></li>
@@ -43,7 +52,7 @@
                               
                 <section class="aboutBottom">
                     <div class="imgContainer">
-                        <img src="./assets/small-box@2x.png" alt="">
+                        <img src="./assets/small-box@2x.png" alt="A panda sitting on a log">
                     </div>
                     <div class="textContainer">
                         <h2>More about our park</h2>
@@ -55,25 +64,87 @@
             </div>
         </section>
 
-        <section class="aboutContainer">
+        <section id="blog" class="blogContainer">
             <section class="bobbyAndBella">
                 <div class="wrapper">
                     <div class="textContainer">
                         <h2>Bobby And Bella</h2>
-                        <p> Loloremque ad a modi ut itaque ipsa quia dolorum recusandae sapiente, eum distinctio Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt similique eveniet aspernatur dolorem iusto unde quo porro tempora laborum nisi atque, placeat repellendus odio mollitia. Dolores quod voluptate eum?</p>
+                        <p> Loloremque ad a modi ut itaque ipsa quia dolorum recusandae sapiente, eum distinctio Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt similique eveniet aspernatur dolorem iusto unde quo.</p>
                         <button>Read more</button>
                     </div>
                 </div>
 
                 <div class="imgContainer">
-                    <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.png" alt="">
+                    <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.png" alt="Two little pandas(Bobby and Bella) laying on the ground">
                 </div>
+            </section>
+            <section class="marco">
+                <div class="imgContainer">
+                    <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.png" alt="A panda(Marco) eating some leaves">
+                </div>
+                <div class="wrapper">
+                    <div class="textContainer">
+                        <h2>Look at Marco now</h2>
+                        <p> Loloremque ad a modi ut itaque ipsa quia dolorum recusandae sapiente, eum distinctio Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt similique eveniet aspernatur dolorem iusto unde quo.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="contact" class="contactContainer">
+            <section class="contactIcons">
+                <div class="wrapper">
+                    <div class="iconGallery">
+                        <div>
+                            <i class="ph ph-gift"></i>
+                            <p>Donation</p>
+                        </div>
+                        <div>
+                            <i class="ph ph-briefcase"></i>
+                            <p>Jobs</p>
+                        </div>
+                        <div>
+                            <i class="ph ph-calendar-check"></i>
+                            <p>Events</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="contactContent">
+                <div class="wrapper">
+                    <div class="stayUpdated">
+                        <p>Stay Updated</p>
+                        <p>Subscribe to our news letter to stay updated.</p>
+                        <form>
+                            <label for="email" class="sr-only">Enter your email</label>
+                            <input type="text" id="email" placeholder="email address">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="contactInfo">
+                            <p>Contact</p>
+                            <p>info@email.com 123-456-7890</p>
+                            <p>123 some road, Toronto, ON</p>
+                            <p>A5A 5A5, Canada</p>
+                    </div>
+                    <div class="contactNav">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </section>
         </section>
     </main>
 
     <footer>
-        
+        <p>Copyright &copy; 2019 Juno College</p>
     </footer>
 </body>
 </html>
